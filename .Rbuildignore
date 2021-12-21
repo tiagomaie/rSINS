@@ -1,0 +1,10 @@
+^test_data$
+^devel$
+^update_version\.sh$
+^setup_proj\.R$
+^README\.html$
+^temp_test\.R$
+^init\.r$
+^LICENSE\.md$
+^Makefile$
+^src$
