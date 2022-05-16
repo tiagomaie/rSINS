@@ -20,7 +20,10 @@ peak_db <- function(
   db_con <- DBI::dbConnect(RSQLite::SQLite(), dbname=db_f)
 
   db_tbls <- DBI::dbListTables(db_con)
-  db_fields <- DBI::dbListFields(db_con, "sinsdata")
+  db_fields <- purrr::map(db_tbls,function(tbls){
+    DBI::dbListFields(db_con, tbls)
+  })
+  names(db_fields) <- db_tbls
 
   DBI::dbDisconnect(db_con)
   return(list(db_tables=db_tbls, db_fields=db_fields))

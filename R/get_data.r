@@ -14,7 +14,7 @@ get_sins_res <- function(
   # go to dir, check if dbs exist
   assertthat::assert_that(dir.exists(db_dir))
 
-  db_files <- list.files(db_dir,pattern=".db",full.names=TRUE)
+  db_files <- list.files(db_dir, pattern=".db",full.names=TRUE)
 
   assertthat::assert_that(length(db_files) > 0)
 
