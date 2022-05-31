@@ -1,6 +1,6 @@
 Package: rSINS
 Title: SINS data in R
-Version: 0.0.0.9000
+Version: 0.1.9001
 Authors@R: 
     person("Tiago","F.V. Maié",email="tiagomaie@hotmail.com",role=c("aut","cre"))
 Description: Loads data generated from SINS into R.
